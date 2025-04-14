@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hours of Operation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 40px;
+    }
+    .hours-container {
+      max-width: 400px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .logo {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+
+     nav {
+      background-color: #ffffffcc;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      margin: 10px 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #4c9faf;
+      font-weight: bold;
+    }
+
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .day {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .day:last-child {
+      border-bottom: none;
+    }
+    .appointment-btn {
+      margin-top: 25px;
+      padding: 12px 24px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .appointment-btn:hover {
+      background-color: #218838;
+    }
+
+
+     @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            table, thead, tbody, th, td, tr {
+                display: block;
+                width: 100%;
+            }
+
+            thead {
+                display: none;
+            }
+
+            tr {
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                padding: 10px;
+                background-color: #fff;
+            }
+
+            td {
+                text-align: left;
+                padding-left: 50%;
+                position: relative;
+            }
+
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: 45%;
+                font-weight: bold;
+            }
+        }
+  </style>
+</head>
+<body>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Services.html">Services</a>
+    <a href="contactinformation.html">Contact</a>
+    <a href="https://g.co/kgs/NmpXGJ5" target="_blank">Location</a>
+    <a href="https://www.facebook.com/profile.php?id=100067008370057" target="_blank">Facebook</a>
+    <a href="https://www.youtube.com/@NursePeh/videos" target="_blank">YouTube</a>
+  </nav> 
+  <div class="hours-container">
+    <img src="Logo2.JPG" alt="DD Home Health Logo" class="logo" />
+    <h2>Hours of Operation</h2>
+    
+    <div class="day"><span>Monday</span><span>9:00 AM – 5:00 PM</span></div>
+    <div class="day"><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></div>
+    <div class="day"><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></div>
+    <div class="day"><span>Thursday</span><span>9:00 AM – 5:00 PM</span></div>
+    <div class="day"><span>Friday</span><span>9:00 AM – 5:00 PM</span></div>
+    <div class="day"><span>Saturday</span><span>10:00 AM – 2:00 PM</span></div>
+    <div class="day"><span>Sunday</span><span>Closed</span></div>
+
+    <!-- Google Calendar link (example date & time) -->
+    <a
+      href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Appointment+with+Us&dates=20250408T140000Z/20250408T143000Z&details=Please+join+us+for+your+appointment.&location=123+Main+St,+City,+State"
+      class="appointment-btn"
+      target="_blank"
+    >
+      Add to Google Calendar
+    </a>
+  </div>
+
+</body>
+</html>
